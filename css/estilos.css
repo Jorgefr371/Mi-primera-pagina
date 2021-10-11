@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2? family = Raleway: wght @ 300; 400; 700 & display = swap');
+
+:root{
+    --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    --color-primary: #667eea;
+    --color-secundary: #764ba2;
+    --boton-pading: 20px 40px;
+     }
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+
+
+}
+
+.subtitle{
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+    
+}
+
+.hero{
+    height: 100vh;
+    background-image: var(--background), url('../assets/IMG_MIX2S_20200706_155436\ \(2\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    
+}
+.hero .container{
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+    font-weight: 700;
+
+
+}
+
+
+
+.nav__items{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+
+
+}
+
+.nav__items--cta{
+    border: 1px solid white;
+
+}
+
+.hero__container{
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: white;
+
+}
+
+
+
+.hero__title{
+    font-size: 3.2rem;
+
+}
+
+.hero__subtitle{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 15px 0;
+
+}
+
+.hero__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+
+
+}
+
+/* burbujas */
+
+.burbuja{
+    
+    border-radius: 50%;
+    background: white;
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+    
+
+    animation: burbujas 3s linear infinite;
+
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+
+
+
